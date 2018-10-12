@@ -1,0 +1,16 @@
+Building a React app is all about components. An individual React Component
+can be thought of as a UI component in an app.
+Components can be divided into two types one is Functional Component and the
+other is Class Components.
+
+render() is the only required method for a React Class Component. React uses
+the return value from this method to determine what to render to the page.
+
+JSX stands for JavaScript eXtension, a syntax extension for JavaScript written
+by Facebook. Using JSX enables us to write the markup for our component view
+in a familiar, HTML like syntax.
+
+
+Redux is a state management paradigm based on Facebook's Flux architecture.
+Redux provides a structure for large state trees and allows you to decouple
+user interaction in your app from state change.
