@@ -10,6 +10,9 @@ JSX stands for JavaScript eXtension, a syntax extension for JavaScript written
 by Facebook. Using JSX enables us to write the markup for our component view
 in a familiar, HTML like syntax.
 
+Babel is a JavaScript transpiler. Babel turns ES6 code into ES5 code. We call
+this process transpiling. So we can enjoy the features of ES6 today yet ensure
+our code still runs in browsers that only support ES5.
 
 Redux is a state management paradigm based on Facebook's Flux architecture.
 Redux provides a structure for large state trees and allows you to decouple
