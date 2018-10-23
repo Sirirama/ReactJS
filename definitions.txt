@@ -25,7 +25,7 @@ component. this.state is private to the component, so we can not update state
 properties directly, as we'll updated with this.setState() method.
 
 Critically, when the state or props of a component update, the component will
-re-render itself...
+re-render itself.
 
 react-router-dom
 ----------------
