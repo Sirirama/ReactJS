@@ -17,3 +17,44 @@ our code still runs in browsers that only support ES5.
 Redux is a state management paradigm based on Facebook's Flux architecture.
 Redux provides a structure for large state trees and allows you to decouple
 user interaction in your app from state change.
+
+Using State
+-----------
+props are immutable and owned by component's parent, state is owned by the 
+component. this.state is private to the component, so we can not update state
+properties directly, as we'll updated with this.setState() method.
+
+Critically, when the state or props of a component update, the component will
+re-render itself.
+
+react-router-dom
+----------------
+There are three types of Components in React Router: router components, route
+matching components and navigation components. All of these components should
+be imported from react-router-dom.
+
+    import { BrowserRouter, Route, Link } from "react-router-dom";
+
+Routers:
+--------
+For web projects, react-router-dom provides <BrowserRouter> and <HashRouter>
+routers. Both of these will create a specialized history object for you.
+Generally we should use <BowserRouter> if you have a server that responds to
+request and a <HashRouter> if you are using a static file server.
+
+    import { BrowserRouter } from 'react-router-dom';
+
+    ReactDOM.render(
+        <BrowserRouter>
+            <App />
+        </BrowserRouter>,
+        holder
+    )
+
+Route Matching:
+---------------
+There are two route matching components: <Route> and <Switch>
+
+Route matching is done by comparing <Route>'s path prop to the current
+location's pathname. When a <Route> matches it will render its content, when
+it does not match it will render null.
