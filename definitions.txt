@@ -27,6 +27,29 @@ properties directly, as we'll updated with this.setState() method.
 Critically, when the state or props of a component update, the component will
 re-render itself.
 
+Why should not we update the state directly ?
+If you try to update the state directly, then it will not re-render the
+component.
+    constructor(props) {
+        super(props);
+        this.state = {
+            message: 'ReactJS'
+        }
+    }
+//Wrong
+this.state.message = 'Hello';
+
+Instead we use setState() method. It schedules an update to component's state
+object. When state changes, the component will re-render itself.
+
+//Correct
+this.setState({
+    message: 'React-Redux'
+});
+
+Note: The only place you can directly assign to the state object is in
+constructor.
+
 react-router-dom
 ----------------
 There are three types of Components in React Router: router components, route
